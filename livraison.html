@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Livraison | Pizza Snack Les Écarts</title>
 <meta name="description" content="Livraison le soir à Maizières-lès-Metz et aux alentours. Dès 15€ d'achat, frais de 2€ à 3,50€, gratuite dès 30€ ou 50€ selon le secteur.">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Caveat:wght@600&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -15,8 +16,8 @@
 <header class="site-header">
   <div class="container">
     <a href="index.html" class="brand">
-      <img src="https://static.wixstatic.com/media/077285_eca79ff43710461cbf9f52fb6f09c4bc~mv2.png/v1/fill/w_200,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/355906199_10018782641480302_4371230187382422953_n-removebg-preview.png" alt="Logo Pizza Snack Les Écarts" width="44" height="44">
-      <span>Les Écarts<small>Pizza snack &middot; four à bois</small></span>
+      <img src="assets/img/logo.jpg" alt="Logo Pizza Snack Les Écarts">
+      <span class="brand-text">Les Écarts<small>Pizza snack &middot; four à bois</small></span>
     </a>
     <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -35,12 +36,11 @@
 
 <main>
 
-  <section class="hero" style="min-height: 0;">
-    <div class="hero-embers" aria-hidden="true"></div>
-    <div class="container" style="grid-template-columns: 1.1fr 0.9fr;">
+  <section class="hero">
+    <div class="container">
       <div>
         <p class="eyebrow">Livraison</p>
-        <h1 style="font-size: clamp(2.2rem, 4.5vw, 3.4rem);">Livrés chez vous, <span style="color: var(--ember);">le soir</span></h1>
+        <h1 style="font-size: clamp(2.2rem, 4.5vw, 3.4rem);">Livrés chez vous, <em>le soir</em></h1>
         <p class="hero-lead">Toute la carte est disponible en livraison à partir de 18h30. Commande par téléphone, dernière prise de commande à 20h30.</p>
         <div class="hero-actions">
           <a href="tel:0782697830" class="btn btn-primary">Commander maintenant</a>
@@ -48,14 +48,15 @@
         </div>
       </div>
       <div class="hero-photo">
-        <img src="https://static.wixstatic.com/media/11062b_7483b580035c4978a9904ea7fda7321f~mv2.jpg/v1/fill/w_900,h_680,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_7483b580035c4978a9904ea7fda7321f~mv2.jpg" alt="Pizza prête à être livrée" loading="lazy">
+        <img src="assets/img/pizza-artichaut.jpg" alt="Pizza aux artichauts, prête à être dégustée" loading="lazy">
+        <span class="badge">18h30 – 21h00</span>
       </div>
     </div>
   </section>
 
-  <div class="crust-divider to-cream" aria-hidden="true"></div>
+  <div class="crust-divider to-deep" aria-hidden="true"></div>
 
-  <section class="section">
+  <section class="section section-deep">
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">Comment ça marche</p>
@@ -107,7 +108,7 @@
         </tbody>
       </table>
 
-      <p style="margin-top: 24px; color: rgba(23,20,15,0.65); font-size: 0.92rem;">Règlement accepté : CB, espèces et carte tickets restaurant.</p>
+      <p style="margin-top: 24px; color: var(--wood-soft); font-size: 0.92rem;">Règlement accepté : CB, espèces et carte tickets restaurant.</p>
 
       <div class="hero-actions" style="margin-top: 28px;">
         <a href="tel:0782697830" class="btn btn-primary">Appeler le 07 82 69 78 30</a>
@@ -121,7 +122,10 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand">Les Écarts</div>
+        <div class="footer-brand">
+          <img src="assets/img/logo.jpg" alt="Logo Pizza Snack Les Écarts">
+          <span>Les Écarts</span>
+        </div>
         <p>Pizza snack familiale au four à bois, à Maizières-lès-Metz. À emporter ou livré le soir.</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/p/pizza-snack-les-%C3%A9carts-100093835788846/" aria-label="Facebook" target="_blank" rel="noopener">

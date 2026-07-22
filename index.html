@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pizza Snack Les Écarts | Pizzeria familiale à Maizières-lès-Metz</title>
 <meta name="description" content="Pizza Snack Les Écarts, pizzeria familiale à Maizières-lès-Metz : pizzas au four à bois, burgers, paninis et sandwichs. À emporter ou livrés le soir.">
+<link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Yeseva+One&family=Caveat:wght@600&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -15,8 +16,8 @@
 <header class="site-header">
   <div class="container">
     <a href="index.html" class="brand">
-      <img src="https://static.wixstatic.com/media/077285_eca79ff43710461cbf9f52fb6f09c4bc~mv2.png/v1/fill/w_200,h_200,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/355906199_10018782641480302_4371230187382422953_n-removebg-preview.png" alt="Logo Pizza Snack Les Écarts" width="44" height="44">
-      <span>Les Écarts<small>Pizza snack &middot; four à bois</small></span>
+      <img src="assets/img/logo.jpg" alt="Logo Pizza Snack Les Écarts">
+      <span class="brand-text">Les Écarts<small>Pizza snack &middot; four à bois</small></span>
     </a>
     <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
@@ -37,12 +38,11 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero-embers" aria-hidden="true"></div>
     <div class="container">
       <div>
         <p class="eyebrow">Maizières-lès-Metz &middot; depuis 2023</p>
-        <h1>Des pizzas <span>au feu de bois</span>,<br>faites maison, en famille.</h1>
-        <p class="hero-lead">Pizzas, burgers, paninis et sandwichs préparés avec soin dans notre four à bois traditionnel. À emporter tous les jours, ou livrés chez vous le soir.</p>
+        <h1>Des pizzas <em>au feu de bois</em>,<br>faites maison, en famille.</h1>
+        <p class="hero-lead">Pizzas, burgers, paninis et sandwichs préparés avec soin dans notre four à bois traditionnel. À emporter toute la semaine, ou livrés chez vous le soir.</p>
         <div class="hero-actions">
           <a href="menu.html" class="btn btn-primary">Voir la carte</a>
           <a href="tel:0782697830" class="btn btn-outline">07 82 69 78 30</a>
@@ -54,18 +54,19 @@
         </div>
       </div>
       <div class="hero-photo">
-        <img src="https://static.wixstatic.com/media/077285_bebf8145ec5d436485900347f64f7d36~mv2.png/v1/fill/w_1200,h_900,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/077285_bebf8145ec5d436485900347f64f7d36~mv2.png" alt="Pizza cuite au four à bois, Pizza Snack Les Écarts" loading="eager">
+        <img src="assets/img/hero-four-a-bois.jpg" alt="Pizza cuite dans notre four à bois traditionnel" loading="eager">
+        <span class="badge">tout droit sorti du four</span>
       </div>
     </div>
   </section>
-  <div class="crust-divider to-cream" aria-hidden="true"></div>
+  <div class="crust-divider to-deep" aria-hidden="true"></div>
 
   <!-- HISTOIRE -->
-  <section class="section">
+  <section class="section section-deep">
     <div class="container">
       <div class="about-grid">
         <div class="about-photo">
-          <img src="https://static.wixstatic.com/media/11062b_2523be58750c494eade6059bfe460807~mv2.jpg/v1/fill/w_900,h_720,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/P%C3%A2te.jpg" alt="Préparation de la pâte à pizza maison" loading="lazy">
+          <img src="assets/img/pizza-four-olives.jpg" alt="Pizza fraîchement sortie du four à bois" loading="lazy">
         </div>
         <div>
           <p class="eyebrow">Notre histoire</p>
@@ -81,10 +82,8 @@
     </div>
   </section>
 
-  <div class="crust-divider to-char" aria-hidden="true"></div>
-
   <!-- POURQUOI NOUS -->
-  <section class="section section-char on-dark">
+  <section class="section">
     <div class="container">
       <div class="section-head">
         <p class="eyebrow">Pourquoi Les Écarts</p>
@@ -93,14 +92,17 @@
       </div>
       <div class="info-strip">
         <div class="info-item">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 3 19h18L12 3Z"/><circle cx="12" cy="14" r="1.2" fill="currentColor" stroke="none"/><circle cx="9" cy="16.5" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="16.5" r="1" fill="currentColor" stroke="none"/></svg>
           <h4>Pizzas au choix</h4>
           <p>Base tomate ou base crème, de la Margherita à la Savoyarde, plus une pizza 100% personnalisable.</p>
         </div>
         <div class="info-item">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10h16M4 14h16" stroke-linecap="round"/><rect x="3" y="7" width="18" height="10" rx="5"/></svg>
           <h4>Snack complet</h4>
           <p>Burgers, sandwichs chauds, paninis, frites et desserts maison comme le tiramisu ou la pizza Nutella.</p>
         </div>
         <div class="info-item">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 9h16M8 3v4M16 3v4" stroke-linecap="round"/></svg>
           <h4>Pour tous les événements</h4>
           <p>Anniversaires, repas d'entreprise ou commandes en grande quantité, nous préparons vos pizzas sur mesure.</p>
         </div>
@@ -108,22 +110,28 @@
     </div>
   </section>
 
-  <div class="crust-divider to-cream2" aria-hidden="true"></div>
+  <div class="crust-divider to-wood" aria-hidden="true"></div>
 
   <!-- EVENEMENTS -->
-  <section class="section section-cream2">
+  <section class="section section-wood on-dark">
     <div class="container">
       <div class="cta-band">
-        <div>
+        <div class="cta-band-text">
+          <p class="eyebrow">Événements</p>
           <h2>Une soirée pizza pour votre entreprise ou entre amis&nbsp;?</h2>
-          <p>Anniversaires, repas d'entreprise, soirées d'équipe ou commandes en grande quantité : nous préparons vos pizzas pour rendre chaque occasion mémorable. Contactez-nous pour organiser votre commande.</p>
+          <p>Anniversaires, repas d'entreprise, soirées d'équipe ou commandes en grande quantité : nous préparons vos pizzas pour rendre chaque occasion mémorable.</p>
+          <div class="hero-actions">
+            <a href="tel:0782697830" class="btn btn-outline">Nous contacter</a>
+          </div>
         </div>
-        <div class="hero-actions">
-          <a href="tel:0782697830" class="btn btn-outline">Nous contacter</a>
+        <div class="cta-band-photo">
+          <img src="assets/img/sandwich-sauces.jpg" alt="Sandwich maison et sauces artisanales" loading="lazy">
         </div>
       </div>
     </div>
   </section>
+
+  <div class="crust-divider from-wood" aria-hidden="true"></div>
 
   <!-- INFOS PRATIQUES -->
   <section class="section">
@@ -168,7 +176,10 @@
   <div class="container">
     <div class="footer-grid">
       <div>
-        <div class="footer-brand">Les Écarts</div>
+        <div class="footer-brand">
+          <img src="assets/img/logo.jpg" alt="Logo Pizza Snack Les Écarts">
+          <span>Les Écarts</span>
+        </div>
         <p>Pizza snack familiale au four à bois, à Maizières-lès-Metz. À emporter ou livré le soir.</p>
         <div class="footer-social">
           <a href="https://www.facebook.com/p/pizza-snack-les-%C3%A9carts-100093835788846/" aria-label="Facebook" target="_blank" rel="noopener">
