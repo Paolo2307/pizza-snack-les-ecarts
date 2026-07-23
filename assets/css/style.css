@@ -222,8 +222,11 @@ p { margin: 0 0 1em; }
 .menu-panel { display: none; padding-top: 40px; }
 .menu-panel.is-active { display: block; }
 
-.menu-hero-photo { border-radius: var(--radius); overflow: hidden; margin-bottom: 36px; box-shadow: var(--shadow-soft); max-height: 320px; }
-.menu-hero-photo img { width: 100%; height: 320px; object-fit: cover; }
+.menu-hero-photo { border-radius: var(--radius); overflow: hidden; margin-bottom: 36px; box-shadow: var(--shadow-soft); aspect-ratio: 16 / 9; max-height: 480px; }
+.menu-hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center center; }
+@media (max-width: 640px) {
+  .menu-hero-photo { aspect-ratio: 4 / 3; }
+}
 
 .menu-legend { display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 8px; font-size: 0.82rem; color: var(--wood-soft); }
 .menu-legend span { display: inline-flex; align-items: center; gap: 6px; }
