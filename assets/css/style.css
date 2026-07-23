@@ -82,8 +82,7 @@ p { margin: 0 0 1em; }
 /* ---------- Header ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 100;
-  background: rgba(250, 241, 225, 0.94);
-  backdrop-filter: blur(6px);
+  background: rgba(250, 241, 225, 0.97);
   border-bottom: 1px solid var(--cream-line);
 }
 .site-header .container { display: flex; align-items: center; justify-content: space-between; height: 82px; }
@@ -111,7 +110,7 @@ p { margin: 0 0 1em; }
 @media (max-width: 860px) {
   .nav-toggle { display: inline-flex; }
   .main-nav {
-    position: fixed; inset: 82px 0 0 0; background: var(--cream);
+    position: fixed; inset: 82px 0 0 0; background: var(--cream); z-index: 99;
     transform: translateY(-8px); opacity: 0; visibility: hidden;
     transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s; overflow-y: auto;
   }
