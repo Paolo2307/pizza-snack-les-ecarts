@@ -1,6 +1,30 @@
 // PIZZA SNACK LES ÉCARTS — scripts partagés
 
 document.addEventListener('DOMContentLoaded', function () {
+  // --- Bannière congés annuels (s'affiche automatiquement pendant la période) ---
+  var banner = document.getElementById('vacationBanner');
+  var bannerClose = document.getElementById('vacationBannerClose');
+
+  if (banner) {
+    var vacationStart = new Date('2026-07-27T00:00:00');
+    var vacationEnd = new Date('2026-08-09T23:59:59');
+    var now = new Date();
+    var dismissKey = 'vacationBannerDismissed-2026-07-27';
+    var isDismissed = false;
+    try { isDismissed = window.localStorage.getItem(dismissKey) === '1'; } catch (e) {}
+
+    if (now >= vacationStart && now <= vacationEnd && !isDismissed) {
+      banner.hidden = false;
+    }
+
+    if (bannerClose) {
+      bannerClose.addEventListener('click', function () {
+        banner.hidden = true;
+        try { window.localStorage.setItem(dismissKey, '1'); } catch (e) {}
+      });
+    }
+  }
+
   // --- Menu mobile (hamburger) ---
   var toggle = document.querySelector('.nav-toggle');
   var nav = document.querySelector('.main-nav');

@@ -79,6 +79,28 @@ p { margin: 0 0 1em; }
 
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
+/* ---------- Vacation banner ---------- */
+.vacation-banner {
+  background: linear-gradient(135deg, var(--ember), var(--ember-deep));
+  color: var(--cream);
+}
+.vacation-banner[hidden] { display: none; }
+.vacation-banner-inner {
+  display: flex; align-items: center; justify-content: center; gap: 16px;
+  padding: 12px 24px; text-align: center;
+}
+.vacation-banner-text { font-size: 0.92rem; font-weight: 600; line-height: 1.4; }
+.vacation-banner-text strong { font-family: var(--font-display); font-weight: 400; font-size: 1.02em; }
+.vacation-banner-close {
+  flex: none; background: rgba(250,241,225,0.18); border: none; color: var(--cream);
+  width: 26px; height: 26px; border-radius: 50%; font-size: 1.1rem; line-height: 1; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center; transition: background 0.15s ease;
+}
+.vacation-banner-close:hover { background: rgba(250,241,225,0.32); }
+@media (max-width: 640px) {
+  .vacation-banner-inner { flex-direction: column; gap: 8px; padding: 14px 20px; }
+}
+
 /* ---------- Header ---------- */
 .site-header {
   position: sticky; top: 0; z-index: 100;
